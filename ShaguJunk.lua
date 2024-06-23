@@ -14,7 +14,7 @@ do -- config
     end
 
     -- add vendor entry
-    if commandlist[1] == "v" then
+    if commandlist[1] == "v" or commandlist[1] == "vendor" then
       local addstring = table.concat(commandlist," ",2)
       if addstring == "" then return end
 
