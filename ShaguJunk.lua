@@ -28,7 +28,7 @@ do -- config
       DEFAULT_CHAT_FRAME:AddMessage("=> adding |cff33ffcc".. addstring .."|r to your vendor list")
 
     -- add delete entry
-    elseif commandlist[1] == "delete" then
+    elseif commandlist[1] == "delete" or commandlist[1] == "de" then
       local addstring = table.concat(commandlist," ",2)
       if addstring == "" then return end
 
